@@ -67,6 +67,10 @@
                                     <constraint firstAttribute="height" constant="128" id="EWN-xo-Mzx"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="zIx-JX-8yX">
+                                <rect key="frame" x="307" y="573" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Me-vs-wnL" customClass="RoundedShadowButton" customModule="Vision_App_Dev" customModuleProvider="target">
                                 <rect key="frame" x="20" y="615" width="100" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,6 +100,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Me-vs-wnL" secondAttribute="bottom" constant="20" id="dID-W0-xPh"/>
                             <constraint firstItem="19v-M9-0fD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fat-4D-0FK"/>
                             <constraint firstItem="19v-M9-0fD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ihl-qw-d1R"/>
+                            <constraint firstItem="zIx-JX-8yX" firstAttribute="centerX" secondItem="5Ne-Os-1wd" secondAttribute="centerX" id="wBU-pr-s9r"/>
+                            <constraint firstItem="zIx-JX-8yX" firstAttribute="centerY" secondItem="5Ne-Os-1wd" secondAttribute="centerY" id="xEe-Ij-v2R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -106,6 +112,7 @@
                         <outlet property="flashBtn" destination="0Me-vs-wnL" id="gp1-V8-mCB"/>
                         <outlet property="identificationLbl" destination="4Ia-ye-vxw" id="hA2-T3-BY8"/>
                         <outlet property="roundedShadowView" destination="x6T-dw-raR" id="OuG-au-O9D"/>
+                        <outlet property="spinner" destination="zIx-JX-8yX" id="cjY-yj-6hu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
